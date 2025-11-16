@@ -172,6 +172,35 @@ npm start
 
 ## 🚀 Deployment
 
+### Deploy on Debian 12 (Local Machine)
+
+For deploying on your local Debian 12 machine:
+
+1. **Quick Setup:**
+   ```bash
+   # Clone the repository
+   git clone https://github.com/taslim19/testhost.git
+   cd testhost
+   
+   # Run setup script
+   bash setup-debian.sh
+   
+   # Configure environment
+   cp .env.example .env
+   nano .env  # Edit with your credentials
+   
+   # Deploy
+   bash deploy.sh
+   ```
+
+2. **Manual Setup:**
+   See [DEPLOY.md](./DEPLOY.md) for detailed step-by-step instructions including:
+   - Node.js installation
+   - PM2 setup for process management
+   - Nginx reverse proxy configuration
+   - SSL/HTTPS setup with Let's Encrypt
+   - Firewall configuration
+
 ### Deploy to Railway/Render/Fly.io
 
 1. Push code to GitHub
